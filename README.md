@@ -7,8 +7,8 @@ This web app was developed in React with the help of ``` create-react-app ``` wh
 
 ## Contents
 *  [Requirements](#requirements)
-*  [Installing and Runing](#quick-start)
-*  [Components over view](#routes)
+*  [Installing and Runing](#install-run)
+*  [Components over view](#components-over-view)
 *  [Contribution](#contribution)
 
 ## <a name="requirements"></a>Requirements
@@ -17,7 +17,7 @@ This is just a frontend app, you need to run its server first. So please, check 
 
 Believe me, this is temporary. We are working hard to get this done in a single Docker Image. 
 
-## <a name="quick-start"></a>Installing and Runing
+## <a name="install-run"></a>Installing and Runing
 
 1.  **Install via npm:**
 
@@ -32,3 +32,18 @@ npm start
 ```
 
 Access from yout browser the [localhost:3001](http://localhost:3001)
+
+## <a name="components-over-view"></a>Components over view
+
+The app itself is very simple. It contains only 4 custom containers and its hierachy is organized as described in tree below.
+
+```
+ominii-web
+└─┬ App/App
+  ├── pages/Login/Login
+  ├─┬ pages/Timeline/Timeline
+  │ └── components/Tweet/Tweet
+  ├── react-router-dom/Route
+  ├── react-router-dom/Router
+  └── react-router-dom/Switch
+```
